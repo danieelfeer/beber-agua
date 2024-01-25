@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Teko:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Montserrat","sans-serif";
+}
+
+body{
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+
+    }
+    
+}
+
+#container-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+#image-content{
+    background-color: blue;
+    background-image: url("img/bottle-of-water.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px;
+    border-radius: 50%;
+
+    @media (max-width: 600px) {
+        padding: 120px;
+    }
+    
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 50vw;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        width: 100vw;
+
+
+    }
+}
+
+h1{
+    font-size: 2rem;
+}
+
+#text main #result{
+   display:flex ;
+   flex-direction: column;
+   justify-content: space-arround;
+   gap: 20px;
+   align-items: center;
+}
+
+label{
+    font-size: 1.5rem;
+}
+input{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+}
+
+button{
+    font-family: "Montserrat";
+    font-weight: 600;
+    background-color: #78CCF0;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+strong{
+    font-size: 2rem;
+}
